@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(156, 190, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#ptop{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(58, 80, 58);
+    display: flex;
+    padding: 0px 30%;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.elem h2{
+    font-weight: 500;
+}
+
+.box{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(139, 172, 139);
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 10px 20px;
+}
+
+#pbottom{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* pointer-events: none; */
+}
+
+.bubble{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(69, 95, 69);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble:hover{
+    background-color: rgb(51, 70, 51);
+    cursor: pointer;
+}
+
+::selection{
+    color: bisque;
+    background-color: rgb(51, 70, 51);
+}
+
+#finaltext{
+    color: rgb(51, 70, 51);
+    font-size: 70px;
+    font-weight: 900;
+}
+
